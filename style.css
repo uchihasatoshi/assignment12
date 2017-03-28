@@ -1,0 +1,135 @@
+body{
+    margin: 0px;
+   /*border: 1px solid;*/
+}
+
+/*logo模块*/
+.logo{
+    text-align: center;
+}
+.logo > .img{
+    background: #D8D8D8;
+    width: 72px;
+    height: 72px;
+    border-radius: 36px; 
+    display: inline-block;
+    margin-top: 60px;
+}
+.logo > .slogan{
+    list-style: none;
+    padding: 0;
+    margin-top: 28px;
+}
+.logo > .slogan >li{
+    display: inline-block;
+    background: #D8D8D8;
+    min-width: 128px;
+    margin-bottom: 24px;
+    margin-left: 10px;
+    margin-right: 10px;
+    line-height: 24px;
+}
+
+/*banner模块*/
+
+.banner{
+    background: #EFEFEF;
+    text-align: center;
+    padding-top: 46px;
+}
+.banner  h2{
+    display: inline-block;
+    background: #D8D8D8;
+    border-radius: 14px;
+    min-width: 200px;
+    margin: 10px auto;
+    line-height: 40px;
+}
+.banner .details{
+    padding-top: 16px;
+    padding-bottom: 30px;
+}
+.banner > .details  p{
+    background: #E8E7E7;
+    max-width: 250px;
+    border-radius: 14px;
+    margin: 20px auto;
+    line-height: 24px;
+}
+.banner > .one-line-header{
+    display: none;
+ }
+ .banner > .one-line-header > h2{
+    padding-left: 2.75em;
+    padding-right: 2.75em;
+ }
+
+@media (min-width:500px){
+    .banner > .two-line-header{
+        display: none;
+    }
+    .banner > .one-line-header{
+        display: block;
+    } 
+    .banner > .details  p{
+        max-width: none;
+        margin-left: 52px;
+        margin-right: 52px;
+    }
+
+}
+
+/*products模块*/
+.products{
+    margin:0 16px; 
+}
+.products > ul{
+    padding: 0;
+    list-style: none;
+    padding-top: 10px;  
+}
+.products .box > .img{
+    background:#d8d8d8;
+    border-radius:4px;
+    height: 180px;
+    margin-top: 32px;
+}
+@media (min-width: 500px){
+    .products > ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .products > ul > li{
+        width: calc(50% - 16px);
+        box-sizing: border-box;
+
+    }
+}
+@media (min-width: 1000px){
+    .products > ul > li{
+        width: calc(33.333333% - 23.333333px);
+    }
+}
+@media (min-width: 1200px){
+    .products > ul{
+        max-width: 928px;
+        margin-left: auto;
+        margin-right: auto;        
+    }
+}
+
+.products .box > h3{
+    background:#bcbcbc;
+    border-radius:4px;
+    max-width: 204px;
+    line-height: 24px;
+    margin-top: 20px;
+    margin-bottom: 14px;
+}
+.products .box > p{
+    background:#ececec;
+    border-radius:4px;
+    line-height: 16px;
+    font-size: 14px;
+}
